@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Nav, Navbar, NavLink } from "react-bootstrap";
 
 const NavigationBar = () => {
-  const [signedIn, setSignedIn] = React.useState(false);
+  const [signedIn, setSignedIn] = React.useState(true);
 
   const IconContainer = () => (
     <Nav className="ms-auto d-flex align-items-center">
