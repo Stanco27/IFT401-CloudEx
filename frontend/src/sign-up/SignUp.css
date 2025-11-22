@@ -1,0 +1,15 @@
+.link {
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    color: rgb(43, 76, 226);
+    text-decoration: none;
+}
+
+.link:hover {
+    color: rgb(128, 149, 242)
+}
+
+.link:active {
+    color: rgb(21, 47, 179);
+}
+

@@ -1,0 +1,22 @@
+# secrets & envs
+config/.env
+.env
+.env.*
+
+# python
+venv/
+__pycache__/
+*.pyc
+
+# node
+node_modules/
+
+# logs & builds
+*.log
+dist/
+build/
+
+# editors
+.vscode/
+.idea/
+
