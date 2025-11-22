@@ -1,7 +1,13 @@
 from flask import Flask, jsonify, render_template
-from db import get_db_conn
+from . import db  
+from .user.user_routes import user_bp
+from .auth.auth_route import auth_bp
+from .stock.stock_route import stock_bp
 
 app = Flask(__name__)
+app.register_blueprint(user_bp)
+app.register_blueprint(auth_bp)
+app.register_blueprint(stock_bp)
 
 @app.route("/")
 def home():
@@ -10,7 +16,7 @@ def home():
 @app.route("/health")
 def health():
     try:
-        conn = get_db_conn()
+        conn = db.get_db_conn() 
         cur = conn.cursor()
         cur.execute("SELECT version();")
         version = cur.fetchone()[0]
