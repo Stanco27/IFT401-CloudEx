@@ -1,4 +1,4 @@
-import React, { useState, type ChangeEvent, type FormEvent } from 'react';
+import { useState, type ChangeEvent, type FormEvent } from 'react';
 import { Modal, Button, Form, Alert, Row, Col } from 'react-bootstrap';
 
 export interface StockUpdateData {
