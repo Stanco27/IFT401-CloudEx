@@ -1,6 +1,6 @@
 import React, { useState, type ChangeEvent, type FormEvent, useEffect } from 'react';
 import { Button, Card, Form, InputGroup, ListGroup, Col, Row, Alert } from 'react-bootstrap';
-import { Link, useNavigate, useSearchParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import { searchStocks, getTotalShares, getStockId, buy_sellStock } from '../Api';
 
 interface StockSearchResult {
@@ -17,11 +17,6 @@ interface TransactionData {
     transaction_type: 'BUY' | 'SELL'; 
 }
 
-interface ApiResponse {
-    success: boolean;
-    message: string;
-    transactionId?: string;
-}
 
 const getUserId = (): string => {
     const id = localStorage.getItem('user_id');
