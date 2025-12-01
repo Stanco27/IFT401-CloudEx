@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { FaPlus, FaEdit, FaTrash, FaUserPlus, FaUserTimes } from 'react-icons/fa';
+import { FaPlus, FaEdit, FaUserPlus, FaUserTimes } from 'react-icons/fa';
 import AddStockModal from './AddStockModal';
 import EditRemoveStockModal, { type StockUpdateData } from './EditRemoveStockModal';
 import CreateUserModal, { type UserData } from './CreateUserModal';
 import RemoveUserModal from './RemoveUserModal';
 import { createStock, createUser, deleteStock, deleteUser, editStock, getStockId, getUserIdByEmail, getUserIdByUsername } from '../Api';
-import axios, { AxiosError } from 'axios';
+import axios from 'axios';
 import MarketSettingsModal from "./MarketSettingsModal";
 
 // --- UTILITY FUNCTIONS DEFINED LOCALLY ---
