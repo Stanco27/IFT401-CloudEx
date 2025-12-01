@@ -2,7 +2,7 @@ import axios from 'axios';
 
 
 // This will be updated once we deploy the backend
-const API_BASE_URL = 'http://127.0.0.1:5000';
+const API_BASE_URL = 'https://ift401-cloudex.onrender.com/';
 
 interface LoginCredentials {
     email?: string;
