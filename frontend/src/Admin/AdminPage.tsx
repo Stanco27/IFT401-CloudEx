@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import { FaPlus, FaEdit, FaTrash, FaUserPlus, FaUserTimes } from 'react-icons/fa';
 import AddStockModal from './AddStockModal';
