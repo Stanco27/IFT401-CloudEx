@@ -20,7 +20,6 @@ const AddStockModal: React.FC<AddStockModalProps> = ({ show, handleClose, onSubm
     const [company_name, setName] = useState<string>('');
     const [price, setPrice] = useState<string>(''); 
     const [description, setDescription] = useState<string>('');
-    const [imageUrl, setImageUrl] = useState<string>('');
     
     const [error, setError] = useState<string>('');
     const [successMessage, setSuccessMessage] = useState<string>('');
@@ -39,7 +38,6 @@ const AddStockModal: React.FC<AddStockModalProps> = ({ show, handleClose, onSubm
         setName('');
         setPrice('');
         setDescription('');
-        setImageUrl('');
         setError('');
         setSuccessMessage('');
         handleClose();
